@@ -1,7 +1,7 @@
 import React from 'react'
 import Yas from '../copanents/Yas/Yas'
 
-const Yaspage = () => {
+const YasPage = () => {
   return (
     <div>
       <Yas/>
@@ -9,4 +9,4 @@ const Yaspage = () => {
   )
 }
 
-export default Yaspage
+export default YasPage
