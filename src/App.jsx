@@ -6,7 +6,7 @@ import Mat4rPage from "./pages/Mat4rPage";
 import PolskPage from "./pages/PolskPage";
 import MaydPage from "./pages/MaydPage";
 import HatrPage from "./pages/HatrPage";
-import Yaspage from "./pages/YasPage";
+import YasPage from "./pages/YasPage";
 
 
 
@@ -16,7 +16,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/vayt" element={<VaytPage/>} />
-        <Route path="/yas" element={<Yaspage/>} />
+        <Route path="/yas" element={<YasPage/>} />
          <Route path="/mat4r" element={<Mat4rPage/>} />
          <Route path="/polsk" element={<PolskPage/>} />
          <Route path="/mayd" element={<MaydPage/>} />
