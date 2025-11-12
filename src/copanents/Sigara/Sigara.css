@@ -1,0 +1,51 @@
+.sigara {
+  padding: 40px 0;
+
+  color: #fff;
+  text-align: center;
+}
+
+.sigara__wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.sigara__image {
+  width: 931px;
+  height: 522px;
+  object-fit: cover; 
+  margin-top: 20px;
+  border: 2px solid #555;
+  border-radius: 10px;
+}
+.oika{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+.loa{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.vet {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icon {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  border-radius: 8px;
+  background-color: #222;
+  padding: 5px;
+  transition: transform 0.2s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+
+}
+

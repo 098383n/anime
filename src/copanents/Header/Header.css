@@ -1,0 +1,269 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background-image: url(../../../public/maxresdefault.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-width: 1200px;
+  height: 800px;
+}
+
+.img-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px;
+}
+
+.img-text img {
+  max-width: 590px;
+  height: auto;
+}
+
+.img-text h1 {
+  text-align: center;
+  color: white;
+  font-style: inherit;
+
+}
+
+.img-text p {
+  text-align: center;
+  color: white;
+  font-style: inherit;
+  font-size: 20px; 
+}
+
+
+.werti {
+  text-align: center;
+  color: white;
+  margin-top: 40px;
+}
+
+.werti h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: yellow;
+}
+
+.platforms {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  border: 1px solid #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  text-align: center;
+  padding: 10px 20px;
+  width: 240px;   
+  height: 60px;     
+  transition: all 0.25s ease;
+  box-sizing: border-box;
+}
+
+.btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: scale(1.04);
+}
+
+.btn img {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+}
+
+.btn span {
+  font-size: 14px;
+  line-height: 1.2rem;
+  word-break: break-word;
+  max-width: 160px;
+}
+
+
+
+
+
+
+.burger {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 2000;
+  font-size: 28px;
+  background: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.burger:hover {
+  transform: scale(1.1);
+}
+
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -260px; 
+  width: 260px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8); 
+  backdrop-filter: blur(6px); 
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  transition: left 0.3s ease-in-out;
+  z-index: 1999;
+}
+
+.sidebar.open {
+  left: 0; 
+}
+
+
+.sidebar .close-btn {
+  align-self: flex-end;
+  font-size: 22px;
+  background: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.sidebar .close-btn:hover {
+  transform: rotate(90deg);
+}
+
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  width: 100%;
+}
+
+.sidebar ul li {
+  font-size: 18px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+.sidebar ul li:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+.sidebar ul li {
+  cursor: pointer;
+  padding: 10px 20px;
+}
+
+.sidebar ul li:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+body {
+  cursor: none; 
+}
+
+.magic-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #ff0000, #660000);
+  box-shadow: 0 0 20px #ff0000, 0 0 40px #660000;
+  pointer-events: none;
+  animation: pulse 1.5s infinite alternate;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes pulse {
+  from {
+    transform: translate(-50%, -50%) scale(1);
+    box-shadow: 0 0 15px #ff0000, 0 0 30px #660000;
+  }
+  to {
+    transform: translate(-50%, -50%) scale(1.3);
+    box-shadow: 0 0 30px #ff2222, 0 0 60px #aa0000;
+  }
+}
+.rain {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(transparent, rgba(255, 255, 255, 0.2));
+  background-size: 2px 20px;
+  animation: rain 0.5s linear infinite;
+  z-index: 0;
+}
+
+@keyframes rain {
+  from {
+    background-position: 0 -20px;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+
+.lightning {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  opacity: 0;
+  animation: flash 3s infinite;
+  z-index: 1;
+}
+
+@keyframes flash {
+  0%, 95%, 100% {
+    opacity: 0;
+  }
+  96% {
+    opacity: 1;
+  }
+} 
+
+

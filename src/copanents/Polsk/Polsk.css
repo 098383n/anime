@@ -1,0 +1,91 @@
+.zigzag-section {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  padding: 80px 10%;
+  background: #000;
+  color: #fff;
+}
+
+.zigzag-block {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  opacity: 0;
+  transform: translateY(80px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.zigzag-block.left-img .image {
+  order: 1;
+}
+
+.zigzag-block.left-img .text {
+  order: 2;
+}
+
+.zigzag-block.right-img .image {
+  order: 2;
+}
+
+.zigzag-block.right-img .text {
+  order: 1;
+}
+
+.zigzag-block .image {
+  flex: 1;
+}
+
+.zigzag-block .image img {
+  width: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.15);
+  transition: transform 0.5s ease;
+}
+
+.zigzag-block .image img:hover {
+  transform: scale(1.05);
+}
+
+.zigzag-block .text {
+  flex: 1;
+  padding: 20px;
+}
+
+.zigzag-block h2 {
+  font-size: 3rem;
+  color: #ff4747;
+  margin-bottom: 10px;
+}
+
+.zigzag-block h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.zigzag-block p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  opacity: 0.8;
+}
+
+
+.zigzag-block.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+.zigzag-block.left-img {
+  transform: translateX(-150px);
+}
+
+.zigzag-block.right-img {
+  transform: translateX(150px);
+}
+
+.zigzag-block.left-img.show,
+.zigzag-block.right-img.show {
+  transform: translateX(0);
+}

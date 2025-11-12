@@ -1,0 +1,69 @@
+.mayd-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at center, #0b0b0b 20%, #161616);
+  font-family: "Poppins", sans-serif;
+}
+
+.mayd-form {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 25px 35px;
+  border-radius: 15px;
+  box-shadow: 0 0 25px rgba(0, 200, 255, 0.2),
+              0 0 60px rgba(110, 0, 255, 0.15);
+  text-align: center;
+  width: 320px;
+  position: relative;
+}
+
+.mayd-title {
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.mayd-input {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 10px;
+  border: 1px solid #444;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font-size: 16px;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+.mayd-input:focus {
+  border-color: #00e0ff;
+  box-shadow: 0 0 15px #00e0ff, 0 0 30px #6e00ff;
+  transform: scale(1.02);
+}
+
+.mayd-btn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #6e00ff, #00e0ff);
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.mayd-btn:hover {
+  box-shadow: 0 0 25px rgba(0, 200, 255, 0.5);
+  transform: translateY(-2px);
+}
+
+.mayd-status {
+  color: #aeefff;
+  margin-top: 10px;
+  font-size: 14px;
+}
