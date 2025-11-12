@@ -6,7 +6,7 @@ import Mat4rPage from "./pages/Mat4rPage";
 import PolskPage from "./pages/PolskPage";
 import MaydPage from "./pages/MaydPage";
 import HatrPage from "./pages/HatrPage";
-import Yaspage from "./pages/Yaspage";
+import Yaspage from "./pages/YasPage";
 
 
 
